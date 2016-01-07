@@ -1,0 +1,7 @@
+#!/usr/bin/env node
+
+const server = require('../index');
+
+server.start(() => {
+  console.log('Server running ', server.info.uri);
+});
